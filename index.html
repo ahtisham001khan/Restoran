@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restoran - Premium Food & Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body class="bg-light-gray text-dark">
+
+  <!-- ========================================== -->
+  <!-- 1. RESPONSIVE NAVIGATION BAR & LOGO SECTION -->
+  <!-- ========================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-cus py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand p-0 d-flex align-items-center gap-2 text-warning fw-bold fs-3 text-uppercase decoration-none">
+        <img src="./images/Site-Logo.png" alt="Site-logo" class="logo-img">
+      </a>
+
+      <button class="navbar-toggler shadow-none border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-4">
+          <li class="nav-item"><a class="nav-link text-uppercase fw-semibold nav-link-custom active-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase fw-semibold nav-link-custom" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase fw-semibold nav-link-custom" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase fw-semibold nav-link-custom" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2">
+            <a href="contact.html" class="btn btn-warning py-2 px-4 fw-semibold text-uppercase text-white rounded-0 btn-book">Book A Table</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="offcanvas offcanvas-end bg-dark-blue text-white d-lg-none" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary py-3">
+          <h5 class="offcanvas-title text-warning fw-bold text-uppercase">Menu</h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body py-4">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link text-white py-2" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-2" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-2" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link text-white py-2" href="contact.html">Contact</a></li>
+            <li class="nav-item mt-3">
+              <a href="contact.html" class="btn btn-warning w-100 py-3 fw-semibold text-uppercase text-white rounded-0 btn-hero-book">Book A Table</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- 2. HERO SECTION WITH CTA BUTTON           -->
+  <!-- ========================================== -->
+  <section class="container-fluid hero d-flex align-items-center position-relative overflow-hidden">
+    <div class="container hero-container">
+      <div class="row align-items-center g-5 text-center text-lg-start">
+        <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="text-white fw-bold mb-4 hero-title">Enjoy Our<br>Delicious Meal</h1>
+          <p class="text-white-50 mb-4 pb-2 hero-desc mx-auto mx-lg-0">
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliquam diam amet diam et eos.
+            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+          </p>
+          <a href="contact.html" class="btn btn-warning py-3 px-5 fw-semibold text-uppercase text-white rounded-0 btn-hero-book">Book A Table</a>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center justify-content-lg-end" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="img-container">
+            <img src="./images/hero.png" alt="Hero Image" class="img-fluid hero-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 3. WHY CHOOSE US (FEATURES) SECTION        -->
+  <!-- ========================================== -->
+  <section class="container-fluid shadow-sm features-overlap-section">
+    <div class="container">
+    <div class="row g-4 text-start">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="p-4 bg-white feature-box h-100 shadow-sm">
+          <i class="bi bi-person-badge text-warning display-5 mb-3 d-inline-block"></i>
+          <h5 class="fw-bold text-dark mb-2 feature-box-title">Master Chefs</h5>
+          <p class="text-muted small mb-0">Diam elitr kasd sed at elitr sed clita ipsum justo diam diam.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="p-4 bg-white feature-box h-100 shadow-sm">
+          <i class="bi bi-egg-fried text-warning display-5 mb-3 d-inline-block"></i>
+          <h5 class="fw-bold text-dark mb-2 feature-box-title">Quality Food</h5>
+          <p class="text-muted small mb-0">Diam elitr kasd sed at elitr sed clita ipsum justo diam diam.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="p-4 bg-white feature-box h-100 shadow-sm">
+          <i class="bi bi-cart-check text-warning display-5 mb-3 d-inline-block"></i>
+          <h5 class="fw-bold text-dark mb-2 feature-box-title">Online Order</h5>
+          <p class="text-muted small mb-0">Diam elitr kasd sed at elitr sed clita ipsum justo diam diam.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="p-4 bg-white feature-box h-100 shadow-sm">
+          <i class="bi bi-headset text-warning display-5 mb-3 d-inline-block"></i>
+          <h5 class="fw-bold text-dark mb-2 feature-box-title">24/7 Service</h5>
+          <p class="text-muted small mb-0">Diam elitr kasd sed at elitr sed clita ipsum justo diam diam.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- EXTRA: ABOUT US SECTION                     -->
+  <!-- ========================================== -->
+  <section class="container-fluid py-section bg-white">
+    <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row g-3">
+          <div class="col-6 text-start">
+            <img src="./images/about-1.jpg" alt="About 1" class="img-fluid rounded-0 w-100 grid-about-img scaling-effect shadow-sm">
+          </div>
+          <div class="col-6 text-start">
+            <img src="./images/about-2.jpg" alt="About 2" class="img-fluid rounded-0 w-75 grid-about-img-small scaling-effect shadow-sm">
+          </div>
+          <div class="col-6 text-end">
+            <img src="./images/about-3.jpg" alt="About 3" class="img-fluid rounded-0 w-75 grid-about-img-small scaling-effect shadow-sm ms-auto">
+          </div>
+          <div class="col-6 text-end">
+            <img src="./images/about-4.jpg" alt="About 4" class="img-fluid rounded-0 w-100 grid-about-img scaling-effect shadow-sm">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <h5 class="text-warning text-uppercase fw-bold section-subtitle line-behind">About Us</h5>
+        <h2 class="text-dark fw-bold mb-4 main-section-title">Welcome to <i class="bi bi-utensils text-warning me-2"></i>Restoran</h2>
+        <p class="text-secondary mb-4 about-para">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliquam diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+        <p class="text-secondary mb-4 about-para">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliquam diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.</p>
+        <div class="row g-4 mb-4 pt-2">
+          <div class="col-6 d-flex align-items-center gap-3">
+            <h1 class="text-warning fw-bold border-start border-warning border-4 ps-3 m-0 counter-number">15</h1>
+            <div>
+              <p class="text-muted small mb-0 font-sub-heading">Years of</p>
+              <h6 class="fw-bold text-dark text-uppercase m-0 font-main-heading">Experience</h6>
+            </div>
+          </div>
+          <div class="col-6 d-flex align-items-center gap-3">
+            <h1 class="text-warning fw-bold border-start border-warning border-4 ps-3 m-0 counter-number">50</h1>
+            <div>
+              <p class="text-muted small mb-0 font-sub-heading">Popular</p>
+              <h6 class="fw-bold text-dark text-uppercase m-0 font-main-heading">Master Chefs</h6>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-warning py-3 px-5 text-white fw-semibold text-uppercase rounded-0 btn-hero-book">Read More</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 4. FEATURED DISHES (FOOD MENU) SECTION     -->
+  <!-- ========================================== -->
+  <section class="container-fluid py-section bg-white border-top border-light">
+    <div class="container p-0">
+      <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+        <h5 class="text-warning text-uppercase fw-bold section-subtitle line-center">Food Menu</h5>
+        <h2 class="text-dark fw-bold main-section-title">Most Popular Items</h2>
+      </div>
+      
+      <div class="d-flex justify-content-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+        <ul class="nav nav-pills custom-menu-tabs border-bottom pb-3 justify-content-center gap-4">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-items-center gap-2 px-3 text-start" href="#" data-tab="breakfast">
+              <i class="bi bi-coffee-cup text-warning fs-4 icon-tab"></i>
+              <div>
+                <small class="text-muted d-block tab-small-text">Popular</small>
+                <h6 class="fw-bold mb-0 text-dark tab-main-text">Breakfast</h6>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2 px-3 text-start" href="#" data-tab="launch">
+              <i class="bi bi-hamburger text-warning fs-4 icon-tab"></i>
+              <div>
+                <small class="text-muted d-block tab-small-text">Special</small>
+                <h6 class="fw-bold mb-0 text-dark tab-main-text">Launch</h6>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center gap-2 px-3 text-start" href="#" data-tab="dinner">
+              <i class="bi bi-utensils text-warning fs-4 icon-tab"></i>
+              <div>
+                <small class="text-muted d-block tab-small-text">Lovely</small>
+                <h6 class="fw-bold mb-0 text-dark tab-main-text">Dinner</h6>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row g-4 text-start" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center gap-3 pb-3 border-bottom mb-3" data-cat="breakfast">
+            <img src="./images/menu-1.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">01</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3 pb-3 border-bottom mb-3" data-cat="breakfast dinner">
+            <img src="./images/menu-2.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">02</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3 pb-3 border-bottom mb-3" data-cat="breakfast">
+            <img src="./images/menu-3.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">03</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3" data-cat="breakfast dinner">
+            <img src="./images/menu-4.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">04</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center gap-3 pb-3 border-bottom mb-3" data-cat="launch">
+            <img src="./images/menu-5.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">05</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3 pb-3 border-bottom mb-3" data-cat="launch dinner">
+            <img src="./images/menu-6.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">06</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3 pb-3 border-bottom mb-3" data-cat="launch">
+            <img src="./images/menu-7.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">07</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-3" data-cat="launch dinner">
+            <img src="./images/menu-8.jpg" alt="Menu" class="img-fluid menu-list-img">
+            <div class="w-100">
+              <span class="menu-index">08</span>
+              <div class="d-flex justify-content-between border-bottom pb-1 mb-1">
+                <h5 class="fw-bold text-dark mb-0 item-title-text">Chicken Burger</h5>
+                <span class="text-warning fw-bold item-price-text">$115</span>
+              </div>
+              <small class="text-muted italic-text font-desc-text">Ipsum dolor sit amet elitr dolor justo diam</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- EXTRA: RESERVATION & VIDEO SECTION         -->
+  <!-- ========================================== -->
+  <section class="container-fluid p-0 form-video-section bg-dark-blue">
+   <div class="container">
+     <div class="row g-0 align-items-stretch">
+      <div class="col-lg-6 position-relative video-container d-flex align-items-center justify-content-center overflow-hidden">
+        <img src="images/video.jpg" alt="Video Cover" class="video-cover-img">
+        <button class="btn btn-warning rounded-circle play-btn d-flex align-items-center justify-content-center shadow"><i class="bi bi-play-fill text-dark fs-2"></i></button>
+      </div>
+      <div class="col-lg-6 p-5 d-flex flex-column justify-content-center text-start" data-aos="fade-up" data-aos-duration="1000">
+        <h5 class="text-warning text-uppercase fw-bold section-subtitle line-behind">Reservation</h5>
+        <h2 class="text-white fw-bold mb-4 main-section-title">Book A Table Online</h2>
+        <form class="row g-3">
+          <div class="col-sm-6">
+            <input type="text" class="form-control rounded-0 custom-input py-3" placeholder="Your Name">
+          </div>
+          <div class="col-sm-6">
+            <input type="email" class="form-control rounded-0 custom-input py-3" placeholder="Your Email">
+          </div>
+          <div class="col-sm-6">
+            <input type="text" class="form-control rounded-0 custom-input py-3" placeholder="Date & Time">
+          </div>
+          <div class="col-sm-6">
+            <select class="form-select rounded-0 custom-input py-3 text-muted">
+              <option selected>No Of People</option>
+              <option value="1">People 1</option>
+              <option value="2">People 2</option>
+              <option value="3">People 3</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <textarea class="form-control rounded-0 custom-input py-3" rows="3" placeholder="Special Request"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-warning w-100 py-3 rounded-0 text-white fw-semibold text-uppercase btn-hero-book">Book Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- EXTRA: TEAM MEMBERS SECTION                -->
+  <!-- ========================================== -->
+  <section class="container-fluid py-section bg-white text-center border-top border-light">
+    <div class="container p-0">
+      <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+        <h5 class="text-warning text-uppercase fw-bold section-subtitle line-center">Team Members</h5>
+        <h2 class="text-dark fw-bold main-section-title">Our Master Chefs</h2>
+      </div>
+      <div class="row g-4 justify-content-center text-center">
+         <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="card border-0 shadow-sm rounded-0 p-4 chef-card bg-white">
+            <img src="./images/team-1.jpg" alt="Chef" class="rounded-circle img-fluid mx-auto mb-3 chef-avatar-img">
+            <h5 class="fw-bold text-dark mb-1 chef-name-text">Full Name</h5>
+            <small class="text-muted d-block mb-3 chef-sub-text">Designation</small>
+            <div class="d-flex justify-content-center gap-2 chef-socials">
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="card border-0 shadow-sm rounded-0 p-4 chef-card bg-white">
+            <img src="./images/team-2.jpg" alt="Chef" class="rounded-circle img-fluid mx-auto mb-3 chef-avatar-img">
+            <h5 class="fw-bold text-dark mb-1 chef-name-text">Full Name</h5>
+            <small class="text-muted d-block mb-3 chef-sub-text">Designation</small>
+            <div class="d-flex justify-content-center gap-2 chef-socials">
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="card border-0 shadow-sm rounded-0 p-4 chef-card bg-white">
+            <img src="./images/team-3.jpg" alt="Chef" class="rounded-circle img-fluid mx-auto mb-3 chef-avatar-img">
+            <h5 class="fw-bold text-dark mb-1 chef-name-text">Full Name</h5>
+            <small class="text-muted d-block mb-3 chef-sub-text">Designation</small>
+            <div class="d-flex justify-content-center gap-2 chef-socials">
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="card border-0 shadow-sm rounded-0 p-4 chef-card bg-white">
+            <img src="./images/team-4.jpg" alt="Chef" class="rounded-circle img-fluid mx-auto mb-3 chef-avatar-img">
+            <h5 class="fw-bold text-dark mb-1 chef-name-text">Full Name</h5>
+            <small class="text-muted d-block mb-3 chef-sub-text">Designation</small>
+            <div class="d-flex justify-content-center gap-2 chef-socials">
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-warning rounded-circle social-icon-btn d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 5. CUSTOMER TESTIMONIALS SLIDER SECTION    -->
+  <!-- ========================================== -->
+  <section class="container-fluid py-section bg-white border-top border-light">
+    <div class="container p-0">
+      <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+        <h5 class="text-warning text-uppercase fw-bold section-subtitle line-center">Testimonial</h5>
+        <h2 class="text-dark fw-bold main-section-title">Our Clients Say!!!</h2>
+      </div>
+      
+      <div class="testimonial-slider-wrapper position-relative">
+        <div class="testimonial-slider-container overflow-hidden">
+          <div class="testimonial-track d-flex" id="testimonialTrack">
+            <!-- Slide 1 -->
+            <div class="testimonial-slide px-3">
+              <div class="p-4 bg-white shadow-sm border border-light testimonial-card h-100">
+                <i class="bi bi-quote text-warning display-4 mb-2 d-block card-quote"></i>
+                <p class="text-muted small mb-4 italic-text">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./images/testimonial-1.jpg" alt="Client" class="rounded-circle testimonial-img shadow-sm">
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark client-title-text">Client Name</h6>
+                    <small class="text-muted font-desc-text">Profession</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="testimonial-slide px-3">
+              <div class="p-4 bg-warning shadow-sm testimonial-card highlighted-card h-100">
+                <i class="bi bi-quote text-white display-4 mb-2 d-block card-quote"></i>
+                <p class="text-white mb-4 italic-text small">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./images/testimonial-2.jpg" alt="Client" class="rounded-circle testimonial-img shadow-sm">
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark client-title-text text-dark">Client Name</h6>
+                    <small class="text-white-50 font-desc-text">Profession</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="testimonial-slide px-3">
+              <div class="p-4 bg-white shadow-sm border border-light testimonial-card h-100">
+                <i class="bi bi-quote text-warning display-4 mb-2 d-block card-quote"></i>
+                <p class="text-muted small mb-4 italic-text">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./images/testimonial-3.jpg" alt="Client" class="rounded-circle testimonial-img shadow-sm">
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark client-title-text">Client Name</h6>
+                    <small class="text-muted font-desc-text">Profession</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 4 (Extra for smooth looping) -->
+            <div class="testimonial-slide px-3">
+              <div class="p-4 bg-white shadow-sm border border-light testimonial-card h-100">
+                <i class="bi bi-quote text-warning display-4 mb-2 d-block card-quote"></i>
+                <p class="text-muted small mb-4 italic-text">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./images/testimonial-1.jpg" alt="Client" class="rounded-circle testimonial-img shadow-sm">
+                  <div>
+                    <h6 class="fw-bold mb-0 text-dark client-title-text">Client Name</h6>
+                    <small class="text-muted font-desc-text">Profession</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <button class="slider-btn prev-btn" id="prevBtn">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn" id="nextBtn">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+      
+      <!-- Dots Indicator -->
+      <div class="d-flex justify-content-center gap-2 mt-4" id="dotsContainer">
+        <span class="dot active-dot" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 6. FOOTER WITH SOCIAL LINKS & CONTACT INFO -->
+  <!-- ========================================== -->
+  <footer class="container-fluid pt-footer pb-4 bg-dark-blue text-white border-top border-secondary">
+  <div class="container">
+    <div class="row g-5 mb-5 text-start">
+      <!-- Company Section -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h5 class="text-warning mb-4 footer-title line-behind-footer">Company</h5>
+        <ul class="list-unstyled p-0 m-0 d-flex flex-column gap-2">
+          <li><a href="#" class="text-white text-decoration-none footer-link"><i class="bi bi-chevron-right me-2 footer-icon"></i>About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none footer-link"><i class="bi bi-chevron-right me-2 footer-icon"></i>Contact Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none footer-link"><i class="bi bi-chevron-right me-2 footer-icon"></i>Reservation</a></li>
+          <li><a href="#" class="text-white text-decoration-none footer-link"><i class="bi bi-chevron-right me-2 footer-icon"></i>Privacy Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none footer-link"><i class="bi bi-chevron-right me-2 footer-icon"></i>Terms & Condition</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Section -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h5 class="text-warning mb-4 footer-title line-behind-footer">Contact</h5>
+        <p class="text-white small mb-3"><i class="bi bi-geo-alt-fill text-white me-3"></i>123 Street, New York, USA</p>
+        <p class="text-white small mb-3"><i class="bi bi-telephone-fill text-white me-3"></i>+012 345 67890</p>
+        <p class="text-white small mb-4"><i class="bi bi-envelope-fill text-white me-3"></i>info@example.com</p>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-light rounded-circle footer-social-btn d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light rounded-circle footer-social-btn d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-outline-light rounded-circle footer-social-btn d-flex align-items-center justify-content-center"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="btn btn-outline-light rounded-circle footer-social-btn d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      
+      <!-- Opening Section -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h5 class="text-warning mb-4 footer-title line-behind-footer">Opening</h5>
+        <h6 class="text-white fw-semibold mb-1 footer-small-head">Monday - Saturday</h6>
+        <p class="text-white small mb-4">09AM - 09PM</p>
+        <h6 class="text-white fw-semibold mb-1 footer-small-head">Sunday</h6>
+        <p class="text-white small mb-0">10AM - 08PM</p>
+      </div>
+      
+      <!-- Newsletter Section -->
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <h5 class="text-warning mb-4 footer-title line-behind-footer">Newsletter</h5>
+        <p class="text-white small mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+        <form class="input-newsletter-container">
+          <input type="email" class="form-control newsletter-input" placeholder="Your email">
+          <button class="btn btn-warning text-white fw-semibold btn-newsletter">SIGNUP</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="border-top border-secondary pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="text-white-50 small mb-0">&copy; <a href="#" class="text-white border-bottom border-secondary text-decoration-none">Restoran</a>, All Right Reserved. Designed By <a href="#" class="text-white border-bottom border-secondary text-decoration-none">Ahtisham khan</a></p>
+      <div class="d-flex gap-3 footer-bottom-links">
+        <a href="#" class="text-white-50 text-decoration-none small">Home</a>
+        <a href="#" class="text-white-50 text-decoration-none small">Cookies</a>
+        <a href="#" class="text-white-50 text-decoration-none small">Help</a>
+        <a href="#" class="text-white-50 text-decoration-none small">FQAs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./script.js"></script>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+</body>
+
+</html>
